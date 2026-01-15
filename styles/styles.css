@@ -75,5 +75,31 @@ section img{
     width: 20%;
     float: left; /*floating an image will make text sit next to it, and wrap around it */
     /* 4 values means top, botton, left, right */
-    margin: 0 15px 0;
+    margin: 0 15px 15px 0;
+}
+
+nav a{
+    color: azure;
+    font-size: 1.2em; /*ems are relative to font size of the parent - 1.2 = 120% */
+    text-decoration: none; /*removes the underligning */
+}
+
+/* links have states, whitch you style using pseudoclasses */
+nav a:hover{
+    color: crimson;
+}
+
+/* there is also a visited state, for when users have been to a link */
+
+/* style an id using # */
+#current{
+    background-color: beige;
+    color: lightpink;
+    font-weight: bold;
+}
+
+section{
+    margin: 20px;
+    border: 2px black solid;
+    padding: 15px; /* padding pushes content away from the edge of the element */
 }
